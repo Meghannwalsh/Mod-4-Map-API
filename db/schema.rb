@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20190925160955) do
     t.integer "follower_id"
   end
 
-  create_table "user", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "color"
     t.string "current_location"
