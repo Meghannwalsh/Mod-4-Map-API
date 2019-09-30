@@ -6,10 +6,16 @@ class UsersController < ApplicationController
     end
 
     def show
-        user = User.find(user_params)
+        user = User.find_by(user_params)
         render json: user
 
     end
+
+    def update
+        user = User.find_by(user_params)
+        user.update(user_params)
+        render json: user
+    end 
 
     def create
         user = User.create(user_params)
