@@ -19,10 +19,10 @@ ActiveRecord::Schema.define(version: 20190925160955) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.integer "password"
-    t.string "color"
-    t.string "current_location"
     t.string "password"
+    t.string "color"
+    t.float "lat"
+    t.float "lng"
   end
 
 end

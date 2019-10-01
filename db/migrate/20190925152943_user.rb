@@ -4,7 +4,8 @@ class User < ActiveRecord::Migration[5.1]
      t.string :name
      t.integer :password
      t.string :color
-     t.string :current_location
+     t.float :lat
+     t.float :lng
      t.string :password
     end 
   end
